@@ -121,7 +121,7 @@ class BaekjoonResultApiCall(threading.Thread):
 				sublime.status_message(u'맞았습니다!! / 메모리: %(memory)sKB, 시간: %(time)sms, 코드 길이: %(code_length)sB' % a)
 				break
 			elif e<10:
-				sublime.status_message(u'%s / 코드 길이: %s' % (rs[e], a['code_length']))
+				sublime.status_message(u'%s / 코드 길이: %sB' % (rs[e], a['code_length']))
 				break
 			else:
 				sublime.status_message(u'%s / 메시지: %s' % (rs[e], r['error_text']))
