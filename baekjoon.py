@@ -87,7 +87,7 @@ class BaekjoonSetLangCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		self.view.window().show_quick_panel(
 			self.lglist, self.ondone,
-			selected_index=self.settings.get('default_lang', 0)
+			selected_index=0
 		)
 	def ondone(self, value):
 		self.settings.set('default_lang', langlist.index(self.lglist[value]))
