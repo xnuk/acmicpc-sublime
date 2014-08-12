@@ -1,0 +1,4 @@
+[
+	{"caption":"Baekjoon: Submit File","command":"baekjoon_submit"},
+	{"caption":"Baekjoon: Set Default Language","command":"baekjoon_set_lang"}
+]
